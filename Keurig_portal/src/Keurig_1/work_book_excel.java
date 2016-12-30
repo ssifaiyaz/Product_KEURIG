@@ -17,17 +17,15 @@ import jxl.write.WriteException;
 public class work_book_excel {
 
 	 //Creating the instance of Webdriver....
-	   WebDriver driver;
-	   WorkbookSettings workbook_settings = null;
-	   Workbook workbook = null;
-	   Sheet sheet = null;
-	   WritableWorkbook writable_workbook = null;
- 	   //Sheet sheet = null;
-	  // FileInputStream file_input_stream = null
-	   
+	 //Sheet sheet = null;
+	  // FileInputStream file_input_stream = null	   
 	   public void login() throws Exception{
-	
-	  // {
+		   WebDriver driver;
+		   WorkbookSettings workbook_settings = null;
+		   Workbook workbook = null;
+		   Sheet sheet = null;
+		   WritableWorkbook writable_workbook = null;
+	  
 		    
  	   //By my_account_link = By.linkText("my account");
  	   //By user_name = By.id("emailidLogin");
@@ -44,7 +42,7 @@ public class work_book_excel {
  	  try
 	   {
  		   FileInputStream file_input_stream = null;
-		   file_input_stream = new FileInputStream("C://Users//shreyas.b//Desktop//TestNG_Automation//Data Pool//Login_details.xls");
+		   file_input_stream = new FileInputStream("C://Users//megha.goyal07//Downloads//Accelerate//Keurig.xls");
 		   
 		   workbook_settings = new WorkbookSettings();
 		   

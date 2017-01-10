@@ -4,23 +4,38 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
-import pac_login.LoginClass;
-public class Userstory_05 extends LoginClass{
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		// TODO Auto-generated method stub
+
+public class Userstory_05 {
+	
+@Test
+	public static void LoginCheck() throws InterruptedException {
+	
+		WebDriver driver=null;
+		String url;
+		driver = new ChromeDriver();
+		url = "http://tvmatp324126d:8081/KeurigPortalDev/login.jsp";
+		driver.get(url);
 		
-				//To Open the portal and login to Homepage
-				//Login_function();
-				//To check for the widgets title in the home page	
-		 LoginClass.Login_function();
+		// taking data from Excel sheet and try logging in
+		driver.findElement(By.name("email")).clear();
+		driver.findElement(By.name("password")).clear();
+		driver.findElement(By.name("email")).sendKeys("harini.p@infy.com");
+		driver.findElement(By.name("password")).sendKeys("112");
+		Thread.sleep(2000);
+		driver.findElement(By.id("mybutton")).click();
+		
 				try {
+					
 					FileInputStream file = new FileInputStream(new File("User_Story_05.xlsx")); 
 					  XSSFWorkbook workbook = new XSSFWorkbook(file);			 
 					  XSSFSheet sheet = workbook.getSheetAt(0);			   
@@ -28,9 +43,10 @@ public class Userstory_05 extends LoginClass{
 					  c.setCellValue("User Story");
 					  XSSFCell c1 = sheet.getRow(0).createCell(1);
 					  c1.setCellValue("STATUS");
-					  
+					
 					  
 					//To get the title for Knowledge Repository  Widget
+					  	Thread.sleep(30000);
 						String  knowledge_title= driver.findElement(By.xpath("/html/body/h1")).getText();
 						XSSFSheet sheet1 = workbook.getSheetAt(0);	
 						XSSFCell c2 = sheet1.createRow(1).createCell(0);
@@ -46,7 +62,7 @@ public class Userstory_05 extends LoginClass{
 						}
 					  
 						//To get the title for  Learning of the Month Widget
-						String  Learning_title= driver.findElement(By.xpath("/html/body/h1")).getText();
+						/*String  Learning_title= driver.findElement(By.xpath("/html/body/h1")).getText();
 						XSSFCell c4 = sheet1.createRow(2).createCell(0);
 						c4.setCellValue("Domain");
 						
@@ -60,6 +76,7 @@ public class Userstory_05 extends LoginClass{
 						}
 					  
 						//To get the title for Appreciation Of Month  Widget
+						Thread.sleep(2000);
 						String  Appreciation_title= driver.findElement(By.xpath("/html/body/h1")).getText();	
 						XSSFCell c5 = sheet1.createRow(3).createCell(0);
 						c5.setCellValue("Packages");
@@ -85,7 +102,7 @@ public class Userstory_05 extends LoginClass{
 						}else{	
 							XSSFCell c3 = sheet1.getRow(3).createCell(0);
 							c3.setCellValue("Fail");
-						}
+						}*/
 						
 						
 					  file.close();
@@ -100,15 +117,20 @@ public class Userstory_05 extends LoginClass{
 				  ioe.printStackTrace();
 				 }
 				driver.close();
-				}
+}
+	
+
 			
 
+}
+
+	
+	
+	
 
 
+
 	
 	
-	
-	
-	}
 
 

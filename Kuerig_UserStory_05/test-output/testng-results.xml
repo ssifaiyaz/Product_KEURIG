@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="64870" started-at="2017-01-10T08:30:19Z" finished-at="2017-01-10T08:31:24Z">
+  <suite name="Default suite" duration-ms="59578" started-at="2017-01-11T04:29:03Z" finished-at="2017-01-11T04:30:03Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="64870" started-at="2017-01-10T08:30:19Z" finished-at="2017-01-10T08:31:24Z">
+    <test name="Default test" duration-ms="59578" started-at="2017-01-11T04:29:03Z" finished-at="2017-01-11T04:30:03Z">
       <class name="userStory_05.Userstory_05">
-        <test-method status="PASS" signature="LoginCheck()[pri:0, instance:userStory_05.Userstory_05@224aed64]" name="LoginCheck" duration-ms="64846" started-at="2017-01-10T14:00:19Z" finished-at="2017-01-10T14:01:24Z">
+        <test-method status="PASS" signature="LoginCheck()[pri:0, instance:userStory_05.Userstory_05@5b275dab]" name="LoginCheck" duration-ms="59505" started-at="2017-01-11T09:59:04Z" finished-at="2017-01-11T10:00:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginCheck -->
       </class> <!-- userStory_05.Userstory_05 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

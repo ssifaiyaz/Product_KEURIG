@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+  <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+  <property name="hibernate.connection.username">system</property>
+  <property name="hibernate.connection.password">infy@123</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+<property name="hibernate.default_schema">system</property>
+  <property name="show_sql">true</property>
+  <mapping class="com.infy.keurig.Entities.AppreciationEntity"/>
+  <mapping class="com.infy.keurig.Entities.KnowledgeEntity"/>
+  <mapping class="com.infy.keurig.Entities.LearningEntity"/>
+  <mapping class="com.infy.keurig.Entities.StarEntity"/>
+    <mapping class="com.infy.keurig.Entities.ActiveProjectsEntity"/>
+  <mapping class="com.infy.keurig.Entities.EventsEntity"/>
+  <mapping class="com.infy.keurig.Entities.TestingToolsEntity"/>
+  
+  <mapping class="com.infy.keurig.Entities.DomainEntity"/>
+  <mapping class="com.infy.keurig.Entities.PackagesEntity"/>
+  <mapping class="com.infy.keurig.Entities.TestingEntity"/>
+  <mapping class="com.infy.keurig.Entities.LoginEntity"/>
+  
+</session-factory>
+</hibernate-configuration>

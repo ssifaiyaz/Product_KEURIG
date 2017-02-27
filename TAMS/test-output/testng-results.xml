@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="23917" started-at="2017-02-27T10:16:37Z" finished-at="2017-02-27T10:17:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="23917" started-at="2017-02-27T10:16:37Z" finished-at="2017-02-27T10:17:01Z">
+      <class name="com.tams.auto.framework.BusinessProcess">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.tams.auto.framework.BusinessProcess@7c16905e]" name="beforeMethod" is-config="true" duration-ms="4599" started-at="2017-02-27T15:46:37Z" finished-at="2017-02-27T15:46:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Check()[pri:1, instance:com.tams.auto.framework.BusinessProcess@7c16905e]" name="Check" duration-ms="7916" started-at="2017-02-27T15:46:42Z" finished-at="2017-02-27T15:46:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Check -->
+        <test-method status="PASS" signature="Uncheck_BP()[pri:2, instance:com.tams.auto.framework.BusinessProcess@7c16905e]" name="Uncheck_BP" duration-ms="1142" started-at="2017-02-27T15:46:50Z" finished-at="2017-02-27T15:46:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Uncheck_BP -->
+        <test-method status="PASS" signature="UncheckAll_BP()[pri:3, instance:com.tams.auto.framework.BusinessProcess@7c16905e]" name="UncheckAll_BP" duration-ms="1162" started-at="2017-02-27T15:46:51Z" finished-at="2017-02-27T15:46:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UncheckAll_BP -->
+        <test-method status="PASS" signature="Select_All()[pri:4, instance:com.tams.auto.framework.BusinessProcess@7c16905e]" name="Select_All" duration-ms="785" started-at="2017-02-27T15:46:52Z" finished-at="2017-02-27T15:46:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Select_All -->
+        <test-method status="PASS" signature="Deselect_All()[pri:5, instance:com.tams.auto.framework.BusinessProcess@7c16905e]" name="Deselect_All" duration-ms="704" started-at="2017-02-27T15:46:53Z" finished-at="2017-02-27T15:46:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deselect_All -->
+        <test-method status="PASS" signature="Select_Multiple()[pri:6, instance:com.tams.auto.framework.BusinessProcess@7c16905e]" name="Select_Multiple" duration-ms="1161" started-at="2017-02-27T15:46:53Z" finished-at="2017-02-27T15:46:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Select_Multiple -->
+        <test-method status="PASS" signature="Log_out()[pri:0, instance:com.tams.auto.framework.BusinessProcess@7c16905e]" name="Log_out" is-config="true" duration-ms="6378" started-at="2017-02-27T15:46:55Z" finished-at="2017-02-27T15:47:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Log_out -->
+      </class> <!-- com.tams.auto.framework.BusinessProcess -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
